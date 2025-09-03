@@ -1,7 +1,8 @@
-name:Hello
+name: Hello Workflow
 on: push
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - run:echo "Hello, world!"
-    - uses:actions/checkout@v4
+  build:  # ジョブ名（任意）
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, world!"
+      - uses: actions/checkout@v4
